@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "Kanban Backend API",
   "main": "src/index.js",
-  "type": "module",
   "license": "ISC",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "build": "babel src -d dist",
-    "start:prod": "NODE_ENV=production node src/index.js"
+    "start": "npx babel-node dist/index.js",
+    "dev": "npx nodemon --exec babel-node src/index.js",
+    "build": "rm -rf dist/* && npx babel src -d dist",
+    "start:prod": "NODE_ENV=production node dist/index.js"
   },
   "author": "",
   "keywords": [],
