@@ -1,5 +1,5 @@
 
-# Template Node.js + Express + Mongoose + MongoDB
+# Kanban Node.js + Express + Mongoose + MongoDB
 
 Este projeto é uma API backend para um sistema Kanban, construído com Node.js, Express, Mongoose, e MongoDB. Ele fornece funcionalidades para gerenciar usuários, tarefas (tasks) e categorias dentro de um quadro Kanban.
 
