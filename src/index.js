@@ -3,8 +3,8 @@ import morgan from "morgan";
 import dotenv from "dotenv";
 import cors from "cors";
 import bodyParser from "body-parser";
-// import swaggerUi from "swagger-ui-express";
-// import swaggerDocs from "./docs/swagger";
+import swaggerUi from "swagger-ui-express";
+import swaggerDocs from "./docs/swagger.json";
 import connectDB from "./config/db.js";
 import errorHandler from "./api/middlewares/errorHandler.js";
 import { routes } from "./routes.js";
@@ -25,8 +25,7 @@ app.use(bodyParser.json());
 
 app.use("/api", routes);
 
-// Swagger API documentation
-// app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use(errorHandler);
 
