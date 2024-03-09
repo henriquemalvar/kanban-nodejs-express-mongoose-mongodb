@@ -241,7 +241,7 @@
       },
       "delete": {
         "tags": ["Users"],
-        "summary": "Delete a user by ID",
+        "summary": "Exclui um usuário pelo ID",
         "operationId": "deleteUserById",
         "parameters": [
           {
